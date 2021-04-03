@@ -22,9 +22,7 @@ npm run build
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### LICENSE
-
-MIT License
+### MIT License
 
 Copyright (c) 2021 Aytac Malkoc
 
