@@ -6,25 +6,25 @@
 
 I am developing my personal website in my spare time. You can open an issue for your questions. 😸
 
-### Clone the project
+#### Clone the project
 
 ```
 git clone https://github.com/aytacmalkoc/mywebsite-vue.git
 ```
 
-### Install dependencies
+#### Install dependencies
 
 ```
 npm install
 ```
 
-### Run the project
+#### Run the project
 
 ```
 npm run serve
 ```
 
-### Build the project
+#### Build the project
 
 ```
 npm run build
