@@ -35,16 +35,16 @@ export default {
                     <div class="main-navigation menu-dark">
                         <ul class="sf-menu scrollspy nav dark-nav-on-load dark-nav-on-scroll">
                             <li>
-                                <a href="/" class="nav-link">anasayfa</a>
+                                <router-link :to="{ name: 'Home' }" class="nav-link">anasayfa</router-link>
                             </li>
                             <li>
-                                <a href="/blog.html" class="nav-link">blog</a>
+                                <router-link :to="{ name: 'Blog' }" class="nav-link">blog</router-link>
                             </li>
                             <li>
-                                <a href="/open-source.html" class="nav-link">
+                                <router-link :to="{ name: 'OpenSource' }" class="nav-link">
                                     open source
                                     <i class="fas fa-heart fa-xs"></i>
-                                </a>
+                                </router-link>
                             </li>
                             <li>
                                 <a href="https://www.github.com/aytacmalkoc" target="_blank" class="nav-link">
