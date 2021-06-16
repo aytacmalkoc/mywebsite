@@ -1,25 +1,24 @@
 <script>
-import Header from '@/components/Header/Header.vue';
-import Footer from '../Footer/Footer.vue';
+import Header from "@/components/Header/Header.vue";
+import Footer from "../Footer/Footer.vue";
 
 export default {
-    name: 'BaseLayout',
-    components: {
-        Header,
-        Footer
-    }
-}
+  name: "BaseLayout",
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
 <template>
-    <div id="wrapper" class="clearfix">
-        <Header />
+  <div id="wrapper" class="clearfix">
+    <Header />
 
-        <div id="main-content">
-            
-            <slot />
+    <div id="main-content">
+      <slot />
 
-            <Footer />
-        </div>
+      <Footer />
     </div>
+  </div>
 </template>
