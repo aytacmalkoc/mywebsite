@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Blog from "../views/Blog.vue";
-import BlogDetail from "../views/BlogDetail.vue";
+// import Blog from "../views/Blog.vue";
+// import BlogDetail from "../views/BlogDetail.vue";
 import OpenSource from "../views/OpenSource.vue";
 import NotFound from "../views/NotFound.vue";
 
