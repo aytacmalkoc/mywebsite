@@ -7,12 +7,15 @@ export default {
   data() {
     return {
       repositories: [],
+      loading: false,
     };
   },
   created() {
-    this.$store
-      .dispatch("fetchRepositories")
-      .then((res) => (this.repositories = this.filterReadme(res)));
+    this.loading = true;
+    this.$store.dispatch("fetchRepositories").then((res) => {
+      this.repositories = this.filterReadme(res);
+      this.loading = false;
+    });
   },
 };
 </script>
@@ -33,8 +36,33 @@ export default {
           </p>
         </div>
 
-        <open-source-list :repos="repositories" />
+        <div class="loader" v-if="loading"></div>
+        <open-source-list :repos="repositories" v-else />
       </div>
     </section>
   </base-layout>
 </template>
+
+<style scoped>
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #4a6572;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
