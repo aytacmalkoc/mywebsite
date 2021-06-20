@@ -7,7 +7,6 @@ export default {
   data() {
     return {
       repositories: [],
-      loading: false,
     };
   },
   created() {
@@ -34,8 +33,7 @@ export default {
           </p>
         </div>
 
-        <div v-if="loading">loading</div>
-        <open-source-list :repos="repositories" v-else />
+        <open-source-list :repos="repositories" />
       </div>
     </section>
   </base-layout>

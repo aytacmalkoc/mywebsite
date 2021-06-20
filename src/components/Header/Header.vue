@@ -39,9 +39,9 @@ export default {
               <li>
                 <a href="/" class="nav-link">anasayfa</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="/blog" class="nav-link">blog</a>
-              </li>
+              </li> -->
               <li>
                 <a href="/open-source" class="nav-link">
                   open source
